@@ -1,12 +1,12 @@
 #include <WiFi.h>
 #include "mini.h"
 
-Mini mini = Mini("", 50007);
-const char* ssid     = ""; // WiFi SSID общей сети
+Mini mini = Mini("", 50007);  // создание объекта для управления квадрокоптером
+const char* ssid     = "";    // WiFi SSID общей сети
 const char* password = "";    // пароль от WiFi
 
-const char* host = "";   // ip сервера, на котором запущенна программа управления mini
-const int httpPort = 50007;           // порт сервера
+const char* host = "";        // ip сервера, на котором запущенна программа управления mini
+const int httpPort = 50007;   // порт сервера
 
 void setup()
 {
